@@ -197,4 +197,39 @@ footer {
 }
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+@media (max-width: 800px){
+    body{
+        width: 75%;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    header .logo{
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
 
+    .cta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta .cta-text button{
+        padding: 7px 40px;
+    }
+
+    .main-content .middle-img {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 80%;
+    }
+}
