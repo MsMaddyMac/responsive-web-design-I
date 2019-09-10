@@ -151,7 +151,6 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
   margin-right: 30px;
 }
 
@@ -161,6 +160,8 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+  width: 100%;
+  padding: 10px;
 }
 
 .main-content .bottom-content {
@@ -199,8 +200,10 @@ footer {
 
 @media (max-width: 800px){
     .container{
-        width: 85%;
-    }
+        width: 100%;
+        margin: 0 auto;
+        }
+    
     
     header{
         display: flex;
@@ -227,20 +230,30 @@ footer {
         padding: 7px 40px;
     }
 
-    .main-content .middle-img {
-        padding-left: 20px;
-        width: 90%;
+    .main-content{
+      width: 100%;
+      margin: 0 auto;
     }
 }
 
 @media (max-width: 500px){
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    }
     .header {
-        flex-direction: column-reverse;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-between;
+      padding: 3px;
+      margin: 0 auto;
     }
     .cta img {
         display: none;
     }
     .main-content{
-        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
     }
 }
